@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <title>Kalkulator BMI</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Kalkulator BMI</h1>
+        <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, 
+          berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? 
+          Yuk, hitung sekarang di kalkulator BMI</p>
+        <div class="box">
+          <div class="form">
+            <div class="gender">
+                <strong>Jenis Kelamin</strong>
+                <label class="container">
+                    <input type="radio" name="radio" id="m"><label class="text">Pria</label>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" name="radio" id="f" ><label class="text">Wanita</label>
+                      <span class="checkmark"></span>
+                </label>
+
+            <div class="input">
+                <p for="height"><strong>Usia (tahun)</strong></p>
+                <i class="fa-solid fa-pencil"></i>
+                <input type="text" class="text-input" id="usia" autocomplete="off" required/>
+            </div>
+
+            </div>
+
+            <div class="containerHW">
+            <div class="inputH">
+              <p for="height"><strong>Tinggi Badan (cm)</strong></p>
+              <i class="fa-solid fa-pencil"></i>
+              <input type="number" id="tinggi" required>
+            </div>
+
+            <div class="inputW">
+              <p for="weight"><strong>Berat Badan (kg)</strong></p>
+              <i class="fa-solid fa-pencil"></i>
+              <input type="number" id="berat" required>
+            </div>
+          </div>
+          <div class="button-group">
+            <button class="hitung" id="submit" onclick="calculate();">Hitung BMI</button>
+            <button class="reset" id="reset">Reset</button>
+          </div>
+         </div>
+        </div>
+        <div>
+            <p>Keunggulan Fitur</p>
+            <ol>
+                <li>Menghitung berat badan</li>
+                <li>Menentukan kategori berat badan ideal atau tidak</li>
+                <li>Mempersiapkan program penurunan berat badan</li>
+            </ol>
+            <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau
+                 menyusui tidak boleh mengandalkan pembacaan BMI ini dan tidak ada tindakan 
+                 yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang 
+                 yang memenuhi syarat seperti dokter.</p>
+            <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda 
+                dengan nilai umum. Indeks Massa Tubuh atau BMI dihitung sebagai berat badan 
+                Anda dalam kilogram dibagi dengan kuadrat tinggi badan Anda dalam meter 
+                atau BMI = Kg/M².</p>
+        </div>
+        <h3>Hasil</h3>
+        <div class="result">
+            <p>BMI anda adalah</p>
+            <div id="result">00.00</div>
+            <p class="comment"></p>
+            <div>
+                <button class="download" id="download">Download Hasil BMI</button>
+              </div>
+        </div>
+      <div class="footer">
+          <center>
+              <p><strong>Download Aplikasi</strong></p>
+              <img src="asset/logo-googleplay.png" alt="image" height="50" width="140">
+              <img src="asset/logo-appstore.png" alt="image" height="43" width="140">
+          </center>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalText"></p>
+    </div></div>
+
+
+
+    
+<script src="/js/script.js"></script>
+
+</body>
+</html>

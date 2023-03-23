@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.box{
+    width: 1400px;
+    min-height: 50vh;
+    background:#dcdcdc;
+    border-radius: 8px;
+    text-align: left;
+}
+.form{
+    padding: 10px 20px;
+}
+
+#usia{
+    width:95%;
+}
+#tinggi{
+    width: 95%;
+}
+#berat{
+    width: 95%;
+}
+.button-group{
+    padding: 20px 20px;
+}
+button.hitung{
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+    background: rgb(97,138,254,1);
+    font-size: 16px;
+    border-radius: 7px;
+    padding: 12px 0;
+    width: 10%;
+    outline: none;
+    border: none;
+}
+button.reset{
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+    background: white;
+    font-size: 16px;
+    border-radius: 7px;
+    padding: 12px 0;
+    width: 5%;
+    outline: none;
+    border: none;
+}
+.result{
+    width: 1400px;
+    min-height: 20vh;
+    background:#dcdcdc;
+    border-radius: 8px;
+    text-align: center;
+    padding:10px;
+    font-size: 20px;
+}
+button.download{
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+    background: rgb(97,138,254,1);
+    font-size: 16px;
+    border-radius: 7px;
+    padding: 12px 0;
+    width: 20%;
+    outline: none;
+    border: none;
+}
